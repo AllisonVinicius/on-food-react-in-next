@@ -1,3 +1,4 @@
+import { Header } from "@/Components";
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <h1 className="text-3xl font-bold underline">
         Hello Word, Allison Dev Pleno!
       </h1>
