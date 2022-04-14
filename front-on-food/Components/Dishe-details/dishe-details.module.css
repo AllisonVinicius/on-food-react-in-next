@@ -1,0 +1,11 @@
+.detail {
+  @apply flex items-center;
+  @apply text-sm text-gray-500;
+}
+
+.icon {
+  @apply mr-2 flex items-center;
+}
+
+.icon svg {
+}

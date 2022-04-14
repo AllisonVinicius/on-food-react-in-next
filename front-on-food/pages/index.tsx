@@ -1,4 +1,4 @@
-import { PageTemplate, Search } from "@/Components";
+import { Dishe, PageTemplate, Search } from "@/Components";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -15,11 +15,8 @@ const Home: NextPage = () => {
         <h1> Encontre opções proximas a vs</h1>
         <Search />
         <h2>Descubra seu novo Delivery favorito.</h2>
+        <Dishe />
       </PageTemplate>
-
-      <h1 className="text-3xl font-bold underline">
-        Hello Word, Allison Dev Pleno!
-      </h1>
     </>
   );
 };

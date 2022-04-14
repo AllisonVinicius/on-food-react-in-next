@@ -1,5 +1,5 @@
 import { IconCategory, IconDelivery, IconReviews } from "@/icons";
-import Styles from "./dish-details.module.css";
+import Styles from "./dishe-details.module.css";
 import { DisheDetailsProps } from "./types";
 
 export function DisheDetails({ type, subtitle, title }: DisheDetailsProps) {
