@@ -1,6 +1,8 @@
 import { IconFilter } from "@/icons";
 import { Menu } from "@headlessui/react";
+import { ItemLink } from "./item-link";
 import Styles from "./search.module.css";
+
 export function Search() {
   return (
     <Menu as="div" className={Styles.search}>
@@ -13,13 +15,18 @@ export function Search() {
       <Menu.Items>
         <div>
           <Menu.Items>
-            <span>São PAulo, SP</span>
+            <ItemLink href="/Discover/sao-paulo-sp">São PAulo, SP</ItemLink>
           </Menu.Items>
           <Menu.Items>
-            <span>Florianospolis, SC</span>
+            <ItemLink href="/Discover/florianopolis-sc">
+              {" "}
+              Florianospolis, SC
+            </ItemLink>
           </Menu.Items>
           <Menu.Items>
-            <span>Porto Alegrem, RS</span>
+            <ItemLink href="/Discover/porto-alegre-rs">
+              Porto Alegrem, RS
+            </ItemLink>
           </Menu.Items>
         </div>
       </Menu.Items>

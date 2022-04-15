@@ -4,7 +4,7 @@
 
 .search button {
   @apply flex rounded-full w-full max-w-lg mx-auto;
-  @apply text-[#777777] bg-white shadow p-2;
+  @apply text-[#777777] bg-white shadow p-2 pl-8;
   @apply items-center justify-between transition-colors;
   @apply hover:bg-gray-200;
 }
