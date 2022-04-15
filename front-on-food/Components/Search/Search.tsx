@@ -12,22 +12,22 @@ export function Search() {
           <IconFilter />
         </span>
       </Menu.Button>
-      <Menu.Items>
+      <Menu.Items className={Styles.options}>
         <div>
-          <Menu.Items>
+          <Menu.Item>
             <ItemLink href="/Discover/sao-paulo-sp">São PAulo, SP</ItemLink>
-          </Menu.Items>
-          <Menu.Items>
+          </Menu.Item>
+          <Menu.Item>
             <ItemLink href="/Discover/florianopolis-sc">
               {" "}
               Florianospolis, SC
             </ItemLink>
-          </Menu.Items>
-          <Menu.Items>
+          </Menu.Item>
+          <Menu.Item>
             <ItemLink href="/Discover/porto-alegre-rs">
               Porto Alegrem, RS
             </ItemLink>
-          </Menu.Items>
+          </Menu.Item>
         </div>
       </Menu.Items>
     </Menu>
