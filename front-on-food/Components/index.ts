@@ -1,3 +1,4 @@
+export * from "./Character";
 export * from "./Dishe";
 export * from "./Dishe-details";
 export * from "./Footer";

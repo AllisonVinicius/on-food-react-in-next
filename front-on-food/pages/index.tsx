@@ -1,4 +1,4 @@
-import { PageTemplate, Search } from "@/Components";
+import { Character, PageTemplate, Search } from "@/Components";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Styles from "../styles/internals.module.css";
@@ -17,6 +17,8 @@ const Home: NextPage = () => {
           <h1> Encontre opções proximas a vs</h1>
           <Search />
           <h2>Descubra seu novo Delivery favorito.</h2>
+
+          <Character />
         </div>
       </PageTemplate>
     </>
