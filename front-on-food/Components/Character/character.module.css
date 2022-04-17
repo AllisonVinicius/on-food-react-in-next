@@ -3,7 +3,7 @@
 }
 
 .container hr {
-  @apply mx-auto w-full max-w-7xl h-[5px];
+  @apply mx-auto w-full max-w-7xl h-[2px];
   @apply bg-gradient-to-l from-[#F5F5F5F5] via-slate-900 to-[#F5F5F5F5];
 }
 

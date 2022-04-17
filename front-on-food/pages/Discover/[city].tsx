@@ -10,7 +10,8 @@ export default function Discover() {
   return (
     <PageTemplate>
       <div className={Styles.content}>
-        <h1>Opções na região de {city}</h1>;<p>Encontramos x opções</p>
+        <h1>Opções na região de {city}</h1>
+        <p>Encontramos x opções</p>
         <div className={Styles.items}>
           <DisheList />
         </div>

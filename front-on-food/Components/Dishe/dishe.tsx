@@ -11,11 +11,12 @@ export function Dishe() {
           alt="Prato"
           width={592}
           height={312}
+          layout="responsive"
         />
       </div>
       <div>
         <div className={Styles.header}>
-          <h2>Nome do Produto:</h2>
+          <h2>Nome do Produto </h2>
         </div>
         <div className={Styles.details}>
           <DisheDetails type="reviews" title="(201)" subtitle="4.5" />

@@ -1,5 +1,5 @@
 export type DisheDetailsProps = {
-  type: "delivery" | "reviews" | "category";
+  type: "delivery" | "category" | "reviews";
   title: string;
   subtitle?: string;
 };

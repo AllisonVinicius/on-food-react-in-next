@@ -3,7 +3,7 @@
 }
 .wrapper {
   @apply relative block rounded-3xl overflow-hidden;
-  @apply w-full;
+  @apply w-full h-auto;
 }
 .header {
   @apply flex items-center justify-between;

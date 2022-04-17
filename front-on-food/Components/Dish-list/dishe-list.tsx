@@ -5,6 +5,8 @@ export function DisheList() {
   return (
     <div className={Style.list}>
       <Dishe />
+      <Dishe />
+      <Dishe />
     </div>
   );
 }
