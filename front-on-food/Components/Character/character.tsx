@@ -4,7 +4,7 @@ import Styles from "./character.module.css";
 export function Character() {
   return (
     <div className={Styles.container}>
-      <div>
+      <div className={Styles.device}>
         <Image
           src="/images/home/device.png"
           width={145}
@@ -12,7 +12,7 @@ export function Character() {
           alt="Telefone"
         />
       </div>
-      <div>
+      <div className={Styles.bubble}>
         <Image
           src="/images/home/speech-bubble.png"
           width={64}
@@ -20,7 +20,7 @@ export function Character() {
           alt="Balao"
         />
       </div>
-      <div>
+      <div className={Styles.character}>
         <Image
           src="/images/home/character.png"
           width={183}
@@ -28,14 +28,15 @@ export function Character() {
           alt="Personagem"
         />
       </div>
-      <div>
+      <div className={Styles.background}>
         <Image
           src="/images/home/background.png"
           width={328}
           height={318}
-          alt="FUndo"
+          alt="Fundo"
         />
       </div>
+      <hr />
     </div>
   );
 }
