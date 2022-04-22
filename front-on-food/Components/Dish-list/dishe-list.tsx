@@ -1,12 +1,16 @@
 import { Dishe } from "@/Components";
+import { DishSkeleton } from "@/components";
 import { api } from "@/services";
 import { DishType } from "@/types";
 import { useQuery } from "react-query";
 import Style from "./dish-list.module.css";
+import { DishListProps } from "./type";
 
-export function DisheList() {
+export function DisheList(props: DishListProps) {
   const fetchDishs = async () => {
-    const response = await api.get<DishType[]>("/deliveries?city=sao-paulo-sp");
+    const response = await api.get<DishType[]>(
+      `/deliveries?city=${props.Slug}`
+    );
     return response.data;
   };
 
@@ -14,9 +18,9 @@ export function DisheList() {
   return (
     <div className={Style.list}>
       {isFetching ? (
-        <div>Carregando...</div>
+        <DishSkeleton />
       ) : (
-        data?.map((dishe) => <Dishe key={dishe.id}{...dish} />)
+        data?.map(dishe => <Dishe key={dishe.id} {...dish} />)
       )}
     </div>
   );
